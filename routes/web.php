@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('importExport');
 });
 
+Route::get('/sheet', function () {
+    return view('sheet');
+});
+
 Route::resources([
     '/xcel' => 'XcelController',
 ]);
